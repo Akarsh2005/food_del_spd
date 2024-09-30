@@ -1,0 +1,31 @@
+.add-restaurant {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6D6D6D;
+    font-size: 16px;
+}
+
+.add-restaurant form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-restaurant-name input,
+.add-restaurant-address input,
+.add-restaurant-phone input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-btn {
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}

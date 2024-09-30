@@ -1,0 +1,93 @@
+.search-results {
+    padding: 20px;
+    max-width: 1200px; /* Adjusted max width to accommodate more items per row */
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-results h1 {
+    font-size: 26px; /* Increased for better prominence */
+    margin-bottom: 20px;
+}
+
+.search-results h2 {
+    font-size: 22px; /* Slightly larger for subheadings */
+    margin-top: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.search-results ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.search-result-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+}
+
+.search-result-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow on hover */
+}
+
+.search-result-image-container {
+    position: relative;
+}
+
+.search-result-image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.search-result-icon-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.add-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.2s; /* Smooth transition for hover effect */
+}
+
+.add-icon:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+.food-item-counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.food-item-counter p {
+    margin: 0;
+}
+
+.search-results p {
+    font-size: 16px; /* Consistent font size */
+}
+
+.search-results .no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    margin-top: 20px; /* Added margin for spacing */
+}

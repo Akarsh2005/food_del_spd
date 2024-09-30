@@ -1,0 +1,115 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.profile .title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #C5C5C5;
+  border-radius: 6px;
+  outline-color: tomato;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: tomato;
+  box-shadow: 0 0 5px rgba(255, 99, 71, 0.5);
+}
+
+.multi-field {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  margin-top: 40px;
+  border: none;
+  background-color: tomato;
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff7043;
+}
+
+button:focus {
+  outline: 2px solid tomato;
+  transform: scale(1.02);
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .profile {
+    width: 90%;
+    margin: 50px 20px;
+    padding: 20px;
+  }
+
+  .multi-field {
+    flex-direction: column;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}

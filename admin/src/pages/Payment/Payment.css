@@ -1,0 +1,55 @@
+.payment {
+    width: 70%;
+    margin: 50px auto;
+    color: #505050;
+    font-size: 14px;
+  }
+  
+  .payment p {
+    font-weight: 600;
+  }
+  
+  .payment-table {
+    margin-top: 20px;
+    border: 1px solid #dcdcdc;
+  }
+  
+  .payment-table-format {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    padding: 20px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  
+  .payment-table-format.title {
+    font-weight: bold;
+    background-color: #f7f7f7;
+  }
+  
+  .payment-table-format p {
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .payment-table-format .cursor {
+    color: tomato;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1000px) {
+    .payment {
+      font-size: 12px;
+    }
+    
+    .payment-table-format {
+      grid-template-columns: 1fr 1fr 1fr;
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .payment-table-format.title {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
